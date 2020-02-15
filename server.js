@@ -36,7 +36,7 @@ app.use("/", articleRouter);
 app.use(express.static("public"));
 
 // Database configuration with mongoose
-var URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/news-scraper';
+var URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/news-scrape';
 mongoose.connect(URI);
 var db = mongoose.connection;
 
@@ -52,5 +52,5 @@ db.once("open", function () {
 
 // Listen on port 3000
 app.listen(port, function () {
-    console.log("App running on port 3000!");
+    console.log("Server listening on: http://localhost:" + port);
 });

@@ -1,0 +1,73 @@
+a#home, a.home, a#saved, a.saved {
+	color: #3273dc;
+}
+
+.dropdown {
+	display: none;
+}
+
+#hero-title {
+	padding-bottom: 20px;
+}
+
+section.section {
+	padding-bottom: 0;
+	min-height: 100%;
+}
+
+div.container {
+	min-height: 100%;
+}
+
+div#scrape-results, div#saved-results {
+	min-height: 100%;
+	margin-bottom: 200px;
+}
+
+.result-text {
+	float: left;
+	width: 80%;
+	padding-bottom: 30px;
+}
+
+.save-article {
+	float: right;
+	margin-top: 25px;
+}
+
+.result-div {
+ clear: both;
+}
+
+.saved-text {
+	float: left;
+	width: 70%;
+	padding-bottom: 30px;
+}
+
+.comments-button {
+	float: right;
+	margin-top: 25px;
+}
+
+.unsave-button {
+	float: right;
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+.saved-div {
+ clear: both;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 40px 0;
+}
+
+span.icon {
+	padding-right: 25px;
+	padding-left: 15px;
+}

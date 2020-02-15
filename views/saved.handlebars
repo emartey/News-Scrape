@@ -1,0 +1,84 @@
+<nav class="navbar ">
+    <div class="navbar-brand">
+        <div class="navbar-item">
+            <img src="/assets/img/reuters-logo.png" alt="Reuters Logo">
+        </div>
+        <div class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="/">
+                Home
+            </a>
+            <a class="saved navbar-item" href="/saved">
+                Saved Articles
+            </a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero is-info">
+    <div class="hero-body">
+        <div class="container">
+            <div class="box dropdown is-pulled-right">
+                <ul>
+                    <li><a class="navbar-item" href="/">Home</a></li>
+                    <li><a id="saved" class="navbar-item" href="/saved">Saved Articles</a></li>
+                </ul>
+            </div>
+            <h1 id="hero-title" class="title">
+                News Scraper
+            </h1>
+            <h2 class="subtitle">
+                Reuters News
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h1 class="title">Saved Articles</h1>
+        <div id="saved-results"></div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Reuters News Scraper</strong> by <a href="https://github.com/emartey">Edward Martey</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p id="comments-header" class="modal-card-title">
+                {{!-- Modal header text dynamically rendered --}}
+            </p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <div id="comments-list">
+                <p>Write the first comment for this article.</p>
+            </div>
+            <hr>
+            <div>
+                <textarea id="new-comment-field"></textarea>
+            </div>
+        </section>
+        <footer class="modal-card-foot">
+            {{!-- Save comment button dynamically rendered to include data-id attribute of article--}}
+        </footer>
+    </div>
+</div>
+
+<script src="/assets/js/saved.js"></script>
