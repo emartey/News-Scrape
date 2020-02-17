@@ -9,8 +9,14 @@ var ArticleSchema = new Schema({
     title: {
         type: String,
         required: true,
-        unique: true
+        unique: true,
+        url: {
+            type: String,
+            required: true,
+            unique: true
+        }
     },
+
     // description is a required string
     description: {
         type: String,

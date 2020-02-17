@@ -58,8 +58,30 @@
 <section class="section">
     <div class="container">
         <h1 class="title">Article Results</h1>
-        <div id="scrape-results"></div>
+        <div class="card" id="scrape-results">
+            <h3>
+                <a class="article-link" target="_blank" rel="noopener noreferrer" href="{{this.url}}">{{this.title}}</a>
+            </h3>
+        </div>
     </div>
+    {{!-- <div class="container-fluid article-container">
+    {{#each articles}}
+    <div data-_id="{{this._id}}" class="card">
+        <div class="card-header">
+            <h3>
+                <a class="article-link" target="_blank" rel="noopener noreferrer"
+                    href="{{this.url}}">{{this.headline}}</a>
+                <a class="btn btn-success save">Save Article</a>
+            </h3>
+        </div>
+        <div class="card-body">{{this.summary}}</div>
+    </div>
+    {{/each}} {{#unless articles.length}}
+    <div class='alert alert-warning text-center'>
+        <h4>Uh Oh. Looks like we don't have any new articles.</h4>
+    </div> --}}
+
+
 </section>
 
 <footer class="footer">
