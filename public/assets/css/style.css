@@ -33,6 +33,7 @@ div#scrape-results, div#saved-results {
 	width: 80%;
 	padding-bottom: 30px;
 	margin-left: 1%;
+	margin-top: 0.3%;
 }
 
 .save-article {

@@ -12,8 +12,8 @@ $(document).ready(function () {
         // For each one
         for (var i = 0; i < data.length; i++) {
             // Display the information on the page
-            $("h3").append(
-                $("<a class='article - link card-header' target='_blank' rel='noopener noreferrer'href={{this.url}}>{{this.title}}</a>")
+            $(".card").append(
+                $("<a class='article - link card-header' target='_blank' rel='noopener noreferrer'href={{}}>{{this.title}}</a>")
                     .attr("href", data[i].url)
                     .text(data[i].title)
             ).append("<div class= 'card-body'><p class= 'result-text'>" + data[i].description +
