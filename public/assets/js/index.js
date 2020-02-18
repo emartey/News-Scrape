@@ -12,10 +12,20 @@ $(document).ready(function () {
         // For each one
         for (var i = 0; i < data.length; i++) {
             // Display the information on the page
-            $("#scrape-results").append("<div class= 'card-header' id='result-div'>" + "<h3>" + data[i].title + "</h3>" + "<div class='card-body'><p class= 'result-text'>" + data[i].description +
-                "</p><button class='save-article button is-info is-medium' data-id='" + data[i]._id + "'><span class='icon'><i class='fa fa-bookmark'></i></span>Save Article</button></div></div>");
+            $("h3").append(
+                $("<a class='article - link card-header' target='_blank' rel='noopener noreferrer'href={{this.url}}>{{this.title}}</a>")
+                    .attr("href", data[i].url)
+                    .text(data[i].title)
+            ).append("<div class= 'card-body'><p class= 'result-text'>" + data[i].description +
+                "</p><button class='save-article button is-info is-medium' data-id='" + data[i]._id + "'><span class='icon'><i class='fa fa-bookmark'></i></span>Save Article</button></div>")
+
+
+
 
         }
+
+
+
     });
 
     // Save article button changes the saved property of the article model from false to true

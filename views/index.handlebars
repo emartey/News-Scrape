@@ -58,28 +58,18 @@
 <section class="section">
     <div class="container">
         <h1 class="title">Article Results</h1>
+        {{!-- {{#each Article}} --}}
         <div class="card" id="scrape-results">
+            {{!-- <div class="card-header"> --}}
             <h3>
-                <a class="article-link" target="_blank" rel="noopener noreferrer" href="{{this.url}}">{{this.title}}</a>
+                {{!-- <a class="article-link" target="_blank" rel="noopener noreferrer"
+                        href={{this.url}}>{{this.title}}</a>
+                    <div class="card-body"></div> --}}
             </h3>
         </div>
     </div>
-    {{!-- <div class="container-fluid article-container">
-    {{#each articles}}
-    <div data-_id="{{this._id}}" class="card">
-        <div class="card-header">
-            <h3>
-                <a class="article-link" target="_blank" rel="noopener noreferrer"
-                    href="{{this.url}}">{{this.headline}}</a>
-                <a class="btn btn-success save">Save Article</a>
-            </h3>
-        </div>
-        <div class="card-body">{{this.summary}}</div>
+    {{!-- {{/each}} --}}
     </div>
-    {{/each}} {{#unless articles.length}}
-    <div class='alert alert-warning text-center'>
-        <h4>Uh Oh. Looks like we don't have any new articles.</h4>
-    </div> --}}
 
 
 </section>
@@ -96,3 +86,6 @@
 
 
 <script src="/assets/js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>

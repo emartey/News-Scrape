@@ -22,10 +22,10 @@ router.get("/scrape", function (req, res) {
 
             // Get the title and description of every article, and save them as properties of the result object
             // result.title saves entire <a> tag as it appears on Reuters website
-            result.title = $(this).children(".story").children(".story-content").children("a").children(".story-title").html().replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
+            result.title = $(this).children(".story").children(".story-content").children("a").children(".story-title").html().replace(/(&apos;|\r\n|\n|\r|\t|\s+)/gm, " ").trim();
             // result.description saves text description
             result.description = $(this).children(".story").children(".story-content").children("p").html().replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
-            result.url = $(this).find("a").attr("href").replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
+            result.url = $(this).find("a").attr("href");
 
             console.log(result);
             // Using our Article model, create a new entry

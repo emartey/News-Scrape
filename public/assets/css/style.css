@@ -24,15 +24,20 @@ div#scrape-results, div#saved-results {
 	margin-bottom: 200px;
 }
 
+.card-body{box-shadow: none;
+    box-shadow: 0 1px 2px rgba(10,10,10,.1);
+    display: -webkit-box;
+}
+
 .result-text {
-	float: left;
 	width: 80%;
 	padding-bottom: 30px;
+	margin-left: 1%;
 }
 
 .save-article {
-	float: right;
-	margin-top: 25px;
+	margin-top: 7%;
+    margin-left: 8%;
 }
 
 .result-div {
