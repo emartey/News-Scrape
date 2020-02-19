@@ -47,6 +47,17 @@ $(document).ready(function () {
             console.log("data: ", data);
         });
     });
+    $(document).on("click", ".button is-danger", function () {
+        // Get article id
+        var articleID = $(this).attr("data-id");
+        $.ajax({
+            method: "GET",
+            url: "/articles/"
+        }).deleteMany({}, function (err) {
+            if (err) console.log(err);
+            console.log("Successful deletion");
+        });
+    });
 });
 
 

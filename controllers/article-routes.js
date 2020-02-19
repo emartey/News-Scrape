@@ -153,5 +153,22 @@ router.post("/unsave/:id", function (req, res) {
     res.redirect("/saved");
 });
 
+router.get("/clear", function (req, res) {
+    // Use the article id to find and update it's saved property to false
+    Article.deleteMany({})
+        // Execute the above query
+        .exec(function (err, doc) {
+            // Log any errors
+            if (err) {
+                console.log(err);
+            }
+            // Log result
+            else {
+                console.log("Articles Removed");
+                // alert("Article removed!");
+            }
+        });
+    res.redirect("/");
+});
 
 module.exports = router;

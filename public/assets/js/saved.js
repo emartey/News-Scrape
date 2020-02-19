@@ -24,7 +24,7 @@ $(document).ready(function () {
                         .attr("href", data[i].url)
                         .text(data[i].title)
                 ).append("<div class= 'saved-div card-body'><p class='saved-text'>" + data[i].description +
-                    "</p><a class='unsave-button button is-danger is-medium' data-id='" +
+                    "</p><a class='unsave-button button is-danger is-medium' onClick='window.location.reload()' data-id='" +
                     data[i]._id + "'>Remove</a><a class='comments-button button is-info is-medium' data-id='" + data[i]._id + "'<span class='icon'><i class='fa fa-comments'></i></span>Comments</a></div>")
 
             }
