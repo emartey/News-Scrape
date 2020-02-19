@@ -26,8 +26,6 @@ router.get("/scrape", function (req, res) {
             // result.description saves text description
             result.description = $(this).children(".story-content").children("p").text().replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
             result.url = "https://www.reuters.com/" + $(this).find("a").attr("href");
-
-            console.log(result);
             // Using our Article model, create a new entry
             var entry = new Article(result);
 
@@ -149,6 +147,7 @@ router.post("/unsave/:id", function (req, res) {
             // Log result
             else {
                 console.log("Article Removed");
+                // alert("Article removed!");
             }
         });
     res.redirect("/saved");
