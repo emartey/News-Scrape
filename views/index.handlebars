@@ -14,7 +14,7 @@
             <a class="home navbar-item" href="/">
                 Home
             </a>
-            <a class="navbar-item" href="/saved">
+            <a class="save navbar-item" href="/saved">
                 Saved Articles
             </a>
         </div>
@@ -28,7 +28,8 @@
                             </span>
                             <span>Get New Articles</span>
                         </a>
-                        <a class="button is-danger" href="/clear">
+                        <a class="button is-danger" href="/clear"
+                            onclick="return confirm('Are you sure you to clear ALL articles?');">
                             <span class="icon">
                                 <i class="fa fa-eraser"></i>
                             </span>

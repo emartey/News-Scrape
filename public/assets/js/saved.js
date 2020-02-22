@@ -13,12 +13,6 @@ $(document).ready(function () {
         for (var i = 0; i < data.length; i++) {
             // if article has been marked as saved
             if (data[i].saved === true) {
-                // Display the information on the page
-                // $("#saved-results").append("<div class='saved-div'><p class='saved-text'>" + data[i].title + "<br>" + data[i].description +
-                //     "</p><a class='unsave-button button is-danger is-medium' data-id='" +
-                //     data[i]._id + "'>Remove</a><a class='comments-button button is-info is-medium' data-id='" + data[i]._id +
-                //     "'><span class='icon'><i class='fa fa-comments'></i></span>Comments</a></div>");
-
                 $("#saved-results").append(
                     $("<a class='article - link card-header' target='_blank' rel='noopener noreferrer'href={{}}>{{this.title}}</a>")
                         .attr("href", data[i].url)
@@ -105,6 +99,7 @@ $(document).ready(function () {
                 saved: false
             }
         });
+
     });
 
 });

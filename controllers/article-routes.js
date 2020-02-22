@@ -150,7 +150,6 @@ router.post("/unsave/:id", function (req, res) {
                 // alert("Article removed!");
             }
         });
-    res.redirect("/saved");
 });
 
 router.get("/clear", function (req, res) {

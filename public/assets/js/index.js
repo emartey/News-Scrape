@@ -47,9 +47,9 @@ $(document).ready(function () {
             console.log("data: ", data);
         });
     });
+
+    // clear all articles
     $(document).on("click", ".button is-danger", function () {
-        // Get article id
-        var articleID = $(this).attr("data-id");
         $.ajax({
             method: "GET",
             url: "/articles/"
@@ -59,27 +59,3 @@ $(document).ready(function () {
         });
     });
 });
-
-
-    // function createCard(article) {
-    //     // This function takes in a single JSON object for an article/headline
-    //     // It constructs a jQuery element containing all of the formatted HTML for the
-    //     // article card
-    //     var card = $("<div class='card'>");
-    //     var cardHeader = $("<div class='card-header'>").append(
-    //         $("<h3>").append(
-                // $("<a class='article-link' target='_blank' rel='noopener noreferrer'>")
-                //     .attr("href", data.url)
-                //     .text(data.title)
-    //         )
-    //     );
-
-    //     var cardBody = $("<div class='card-body'>").text(article.summary);
-
-    //     card.append(cardHeader, cardBody);
-    //     // We attach the article's id to the jQuery element
-    //     // We will use this when trying to figure out which article the user wants to save
-    //     card.data("_id", article._id);
-    //     // We return the constructed card jQuery element
-    //     return card;
-    // }
