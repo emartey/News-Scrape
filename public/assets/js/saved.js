@@ -25,6 +25,14 @@ $(document).ready(function () {
         }
     });
 
+    // Message when user wants to remove save article
+    $(document).on("click", ".unsave-button", function () {
+        let deleteCom = confirm("Remove selected article from saved articles?");
+        if (deleteCom === false) {
+            preventDefault();
+        }
+    });
+
     // Comment button opens the comments modal & displays any comments
     $(document).on("click", ".comments-button", function () {
         // Open the comments modal

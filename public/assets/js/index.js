@@ -19,12 +19,7 @@ $(document).ready(function () {
             ).append("<div class= 'card-body'><p class= 'result-text'>" + data[i].description +
                 "</p><button class='save-article button is-info is-medium' data-id='" + data[i]._id + "'><span class='icon'><i class='fa fa-bookmark'></i></span>Save Article</button></div>")
 
-
-
-
         }
-
-
 
     });
 
@@ -48,7 +43,7 @@ $(document).ready(function () {
         });
     });
 
-    // clear all articles
+    // Clear all articles from db
     $(document).on("click", ".button is-danger", function () {
         $.ajax({
             method: "GET",

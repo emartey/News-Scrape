@@ -34,11 +34,11 @@ a.article, a.save:hover, a.home:hover {
 
 .hero.is-info .title {
 	color: black;
-	text-decoration: underline;
 }
 
 .hero.is-info .subtitle{
-margin-left: 44%;
+	margin-left: 44%;
+	text-decoration: underline;
 }
 
 .hero.is-info {
