@@ -151,12 +151,13 @@ span.icon {
 @media only screen and (max-width: 767px) {
 
 .save-article.button.is-info.is-medium {
-    margin-left: -52%;
+    margin-left: -60%;
 }
 
 p.result-text {
-	padding-right: 26%;
+	padding-right: 33%;
 	margin-left: 2%;
+	margin-top: 2%;
 }
 
 a.article {
@@ -186,14 +187,19 @@ a.article {
 }
 
 .saved-text {
-    padding-right: 7%;
+    padding-right: 15%;
 	margin-left: 2%;
 	margin-top: 4%;
 }
 
 a.comments-button.button.is-info.is-medium {
-	margin-left: -30%;
+	margin-left: -39.5%;
 	margin-top: 5%;
+	padding-right: 3%;
+}
+
+fa-comments{
+    margin-left: -4%;
 }
 
 a.unsave-button.button.is-danger.is-medium {
