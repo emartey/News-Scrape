@@ -150,14 +150,19 @@ span.icon {
 
 @media only screen and (max-width: 767px) {
 
+.card-body {
+    display: flow-root;
+}
 .save-article.button.is-info.is-medium {
-    margin-left: -60%;
+    margin-left: 31%;
+    margin-top: -1%;
+    margin-bottom: 7%;
 }
 
 p.result-text {
-	padding-right: 33%;
-	margin-left: 2%;
-	margin-top: 2%;
+    margin-left: 14%;
+    margin-top: 2%;
+    text-align: center;
 }
 
 a.article {
@@ -187,15 +192,17 @@ a.article {
 }
 
 .saved-text {
-    padding-right: 15%;
-	margin-left: 2%;
-	margin-top: 4%;
+	/* padding-right: 10%; */
+	text-align: center;
+	margin-top: 8%;
+	width: 98%;
 }
 
 a.comments-button.button.is-info.is-medium {
 	margin-left: -39.5%;
-	margin-top: 5%;
+	margin-top: 3%;
 	padding-right: 3%;
+	margin-right: -38%;
 }
 
 fa-comments{
@@ -204,6 +211,11 @@ fa-comments{
 
 a.unsave-button.button.is-danger.is-medium {
 	margin-top: 19%;
+}
+
+.is-danger {
+	margin-right: 34%;
+	margin-bottom: 10%;
 }
 
 }
