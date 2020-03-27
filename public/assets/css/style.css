@@ -147,3 +147,57 @@ span.icon {
 	padding-right: 25px;
 	padding-left: 15px;
 }
+
+@media only screen and (max-width: 767px) {
+
+.save-article.button.is-info.is-medium {
+    margin-left: -52%;
+}
+
+p.result-text {
+	padding-right: 26%;
+	margin-left: 2%;
+}
+
+a.article {
+	text-align: center;
+}
+
+.button.is-primary {
+	margin-left: 0%;
+    margin-top: 5%;
+}
+
+.hero.is-info a:not(.button) {
+    text-align: center;
+    margin-left: -1%;
+}
+
+.hero.is-info .subtitle {
+    margin-left: 1%;
+}
+
+.title {
+    text-align: center;
+}
+
+#hero-title {
+    text-align: left;
+}
+
+.saved-text {
+    padding-right: 7%;
+	margin-left: 2%;
+	margin-top: 4%;
+}
+
+a.comments-button.button.is-info.is-medium {
+	margin-left: -30%;
+	margin-top: 5%;
+}
+
+a.unsave-button.button.is-danger.is-medium {
+	margin-top: 19%;
+}
+
+}
