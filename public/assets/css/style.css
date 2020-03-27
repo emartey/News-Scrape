@@ -102,6 +102,7 @@ padding-right: 5%;
 .card-header {
 	padding-left: 1%;
 	font-size: 140%;
+	box-shadow: inset 5px 9px 5px -10px black, inset 0px -9px 8px -10px #CCC;
 }
 
 .save-article {
